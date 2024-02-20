@@ -1,8 +1,10 @@
 import './App.css';
 import Profile from './components/React-Profile/Profile.jsx';
 import FriendList from './components/React-FriendList/FriendList.jsx';
-import userData from './userData.json';
-import friends from './friends.json';
+import TransactionHistory from './components/React-TransactionHistory/TransactionHistory.jsx';
+import userData from './components/React-Profile/userData.json';
+import friends from './components/React-FriendList/friends.json';
+import transactions from './components/React-TransactionHistory/transactions.json';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         likes={userData.stats.likes}
       />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
