@@ -1,0 +1,76 @@
+* {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.userInfo {
+    margin-bottom: 4px;
+}
+
+.avatar {
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+
+.userName {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.tag {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.location {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.list::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 258px;
+    height: 1px;
+    background-color: rgb(27, 27, 27, 0.5);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: rotate(90deg);
+    height: 1px;
+    background-color: rgb(27, 27, 27, 0.5);
+}
