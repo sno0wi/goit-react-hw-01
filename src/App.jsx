@@ -1,6 +1,8 @@
 import './App.css';
-import Profile from './components/Profile';
+import Profile from './components/React-Profile/Profile.jsx';
+import FriendList from './components/React-FriendList/FriendList.jsx';
 import userData from './userData.json';
+import friends from './friends.json';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         views={userData.stats.views}
         likes={userData.stats.likes}
       />
+      <FriendList friends={friends} />
     </>
   );
 }

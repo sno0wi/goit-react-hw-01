@@ -66,11 +66,11 @@
     flex-direction: column;
 }
 
-.item:not(:last-child)::before {
+/* .item:not(:last-child)::before {
     content: '';
     position: absolute;
     width: 100%;
     transform: rotate(90deg);
     height: 1px;
     background-color: rgb(27, 27, 27, 0.5);
-}
+} */
