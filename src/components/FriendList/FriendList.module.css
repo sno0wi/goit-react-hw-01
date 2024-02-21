@@ -11,3 +11,15 @@
     border: 1px solid black;
     border-radius: 5px;
 }
+
+.status {
+    color: black;
+}
+
+.status.online {
+    color: green;
+}
+
+.status.offline {
+    color: red;
+}
